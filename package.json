@@ -1,0 +1,24 @@
+{
+  "name": "detal-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "db": "json-server --watch db.json --port 8001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "json-server": "^0.17.0",
+    "mongoose": "^6.1.4",
+    "nodemon": "^2.0.15"
+  }
+}

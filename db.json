@@ -1,0 +1,152 @@
+{
+  "categories": [
+    {
+      "title": "رستوران",
+      "id": 1,
+      "sub": [
+        {
+          "id": 5,
+          "title": "غذای ایرانی"
+        },
+        {
+          "id": 6,
+          "title": "غذای سنتی"
+        },
+        {
+          "id": 7,
+          "title": "غذای آماده"
+        },
+        {
+          "id": 8,
+          "title": "دریایی"
+        }
+      ]
+    },
+    {
+      "title": "فست فود",
+      "id": 2,
+      "sub": [
+        {
+          "id": 9,
+          "title": "برگر و ساندویچ"
+        },
+        {
+          "id": 10,
+          "title": "پیتزا"
+        },
+        {
+          "id": 11,
+          "title": "سوخاری"
+        },
+        {
+          "id": 12,
+          "title": "غذای ملل"
+        }
+      ]
+    },
+    {
+      "title": "صبحانه",
+      "id": 3,
+      "sub": [
+        {
+          "id": 13,
+          "title": "صبحانه"
+        }
+      ]
+    },
+    {
+      "title": "سایر",
+      "id": 4,
+      "sub": [
+        {
+          "id": 14,
+          "title": "مارکت"
+        },
+        {
+          "id": 15,
+          "title": "کافی شاپ"
+        },
+        {
+          "id": 16,
+          "title": "نوتلا"
+        },
+        {
+          "id": 17,
+          "title": "قنادی"
+        },
+        {
+          "id": 18,
+          "title": "نان"
+        },
+        {
+          "id": 19,
+          "title": "گلفروشی"
+        },
+        {
+          "id": 20,
+          "title": "پت شاپ"
+        },
+        {
+          "id": 21,
+          "title": "هدیه"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "mobile": "09306029572",
+      "name": "انصار میرزایی",
+      "loginCode": 6022
+    }
+  ],
+  "addresses": [
+    {
+      "name": "خانه",
+      "city": "urmia",
+      "unit": "meysan",
+      "address": "فلکه میثم به سمت کبابی وحید",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "شرکت",
+      "city": "tabriz",
+      "unit": "zaferanie",
+      "address": "خیابان صفایی جنب مدرسه بعثت",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "انصار میرزائی ولنده",
+      "city": "urmia",
+      "unit": "molavi",
+      "address": "dfsdfassdasdas",
+      "userId": 1,
+      "id": 3
+    }
+  ],
+  "providers": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "subCategoryId": 5,
+      "name": "رستوران جهانگیری - اوبا",
+      "image": "/img1.jpg",
+      "description": "غذاهای ویژه با برنج اعلای ایرانی با گوشت گوسفندی و کره محلی",
+      "deliveryTime": "35-50",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "subCategoryId": 6,
+      "name": "رستوران جهانگیری",
+      "image": "/img1.jpg",
+      "description": "غذاهای ویژه با برنج اعلای ایرانی با گوشت گوسفندی و کره محلی",
+      "deliveryTime": "35-40",
+      "userId": 1
+    }
+  ]
+}
