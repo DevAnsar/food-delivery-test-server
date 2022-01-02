@@ -45,4 +45,23 @@ const getDelivers = async (req, res) => {
     });
   }
 };
-module.exports = { getCategories, getDelivers };
+
+const getDelivery = async (req,res)=>{
+  try {
+    let deliveryId=req.params.deliveryId;
+    console.log('deliveryId:',deliveryId)
+    let { data } = await axios.get(`/providers/${deliveryId}`);
+    console.log(data);
+    res.json({
+      status: true,
+      deliver: data,
+      message: "",
+    });
+  } catch (error) {
+    res.json({
+      status: false,
+      message: "متاسفانه سرور قادر به پاسخگویی به درخواست شما نیست",
+    });
+  }
+}
+module.exports = { getCategories, getDelivers,getDelivery };
