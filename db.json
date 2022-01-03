@@ -93,48 +93,8 @@
       ]
     }
   ],
-  "users": [
-    {
-      "id": 1,
-      "mobile": "09306029572",
-      "name": "انصار میرزایی",
-      "loginCode": 9011
-    }
-  ],
-  "addresses": [
-    {
-      "name": "خانه",
-      "city": "urmia",
-      "unit": "meysan",
-      "address": "فلکه میثم به سمت کبابی وحید",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "name": "شرکت",
-      "city": "tabriz",
-      "unit": "zaferanie",
-      "address": "خیابان صفایی جنب مدرسه بعثت",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "name": "انصار میرزائی ولنده",
-      "city": "urmia",
-      "unit": "molavi",
-      "address": "dfsdfassdasdas",
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "name": "انصار میرزائی ولنده",
-      "city": "urmia",
-      "unit": "meysan",
-      "address": "سیبس سیبس لبلال غی بلیب ",
-      "userId": 1,
-      "id": 4
-    }
-  ],
+  "users": [],
+  "addresses": [],
   "providers": [
     {
       "id": 1,
@@ -144,7 +104,37 @@
       "image": "/img1.jpg",
       "description": "غذاهای ویژه با برنج اعلای ایرانی با گوشت گوسفندی و کره محلی",
       "deliveryTime": "35-50",
-      "userId": 1
+      "userId": 1,
+      "menu": [
+        {
+          "id": 1,
+          "title": "سوخاری",
+          "products": [
+            {
+              "id": 1,
+              "title": "پکیج خانواده 2",
+              "description": "2 عدد چلوجوجه، 2 عدد چلو کوبیده، 1 عدد چلوبرگ، نوشابه خانواده،مخصوص 5 نفر",
+              "price": "320000",
+              "maxCountInOrder": 10
+            },
+            
+            {
+              "id": 1,
+              "title": "پکیج خانواده 2",
+              "description": "2 عدد چلوجوجه، 2 عدد چلو کوبیده، 1 عدد چلوبرگ، نوشابه خانواده،مخصوص 5 نفر",
+              "price": "320000",
+              "maxCountInOrder": 10
+            },
+            {
+              "id": 1,
+              "title": "پکیج خانواده 2",
+              "description": "2 عدد چلوجوجه، 2 عدد چلو کوبیده، 1 عدد چلوبرگ، نوشابه خانواده،مخصوص 5 نفر",
+              "price": "320000",
+              "maxCountInOrder": 10
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2,

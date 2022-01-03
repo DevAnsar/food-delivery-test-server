@@ -52,11 +52,18 @@ const getDelivery = async (req,res)=>{
     console.log('deliveryId:',deliveryId)
     let { data } = await axios.get(`/providers/${deliveryId}`);
     console.log(data);
-    res.json({
-      status: true,
-      deliver: data,
-      message: "",
-    });
+    if(data){
+      res.json({
+        status: true,
+        delivery: data,
+        message: "",
+      });
+    }else{
+      res.json({
+        status: false,
+        message: "اطلاعات درخواست شده موجود نیست",
+      });
+    }
   } catch (error) {
     res.json({
       status: false,
