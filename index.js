@@ -21,6 +21,7 @@ axios.defaults.baseURL = process.env.DB_URL || 'http://localhost:8001';
 let loginRoutes = require("./src/routes/loginRoutes");
 let userRoutes = require("./src/routes/userRoutes");
 let deliveryRoutes = require("./src/routes/deliveryRoutes");
+let searchRouter = require("./src/routes/searchRoutes");
 
 //Assign port
 var port = process.env.PORT || 8000;
@@ -30,6 +31,7 @@ var port = process.env.PORT || 8000;
 app.use("/api/auth", loginRoutes);
 app.use('/api/user',userRoutes);
 app.use('/api/delivery',deliveryRoutes);
+app.use('/api/search',searchRouter);
 
 // Launch app to the specified port
 app.listen(port, function () {

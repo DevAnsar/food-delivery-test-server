@@ -55,4 +55,26 @@ const createNewAddress = async (req , res )=>{
 
 
 }
-module.exports={getAllUser , getAuthUserAddresses , createNewAddress}
+const getSearch = async (req,res)=>{
+
+	try{
+		let {search} =req.query;
+		
+		// console.log(search);
+		let {data} = await axios.get(`/providers`);
+		console.log(data)
+		res.json({
+			status : true,
+			searchResults : data,
+			message :"نتایج جستجو"
+		})
+
+	}catch(error){
+		res.json({
+			status : false,
+			message : 'متاسفانه سرور قادر به پاسخگویی به درخواست شما نیست'
+		})
+	}
+
+}
+module.exports={getAllUser , getAuthUserAddresses , createNewAddress ,getSearch}
