@@ -24,6 +24,7 @@ const sendCode = async (req, res) => {
     return res.json({
       status: true,
       loginCode: loginCode,
+      mobile: phone,
       message: "کد ورود به شماره موبایل ارسال شد",
     });
   } catch (error) {
@@ -45,7 +46,7 @@ const loginWithCode = async (req, res) => {
     if (data.length > 0) {
       let user = data[0];
 
-	        // console.log("code:", code);
+      // console.log("code:", code);
       if (user.loginCode === Number(code)) {
         /* create jwt and send to clien */
         // await axios.patch(`/users/${user.id}`, {
@@ -68,8 +69,6 @@ const loginWithCode = async (req, res) => {
         message: "شماره موبایل تایید شده نیست",
       });
     }
-
-
   } catch (error) {
     return res.json({
       status: false,
