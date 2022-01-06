@@ -36,7 +36,7 @@ const createNewAddress = async (req, res) => {
     // console.log(data)
     res.json({
       status: true,
-      addresse: data,
+      address: data,
       message: "آدرس جدید ثبت شد",
     });
   } catch (error) {
@@ -105,6 +105,24 @@ const updateAuthUserData = async (req, res) => {
   }
 };
 
+const deleteAddress = async (req,res)=>{
+  try {
+    let {addressId} = req.params;
+    // console.log(addressId);
+    let { data } = await axios.delete(`/addresses/${addressId}`);
+    console.log("data",data)
+    res.json({
+      status: true,
+      message: "آدرس حذف شد",
+    });
+  } catch (error) {
+    res.json({
+      status: false,
+      message: "متاسفانه سرور قادر به پاسخگویی به درخواست شما نیست",
+    });
+  }
+}
+
 module.exports = {
   getAllUser,
   getAuthUserAddresses,
@@ -112,4 +130,5 @@ module.exports = {
   getSearch,
   getAuthUserData,
   updateAuthUserData,
+  deleteAddress
 };

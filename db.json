@@ -100,45 +100,12 @@
       "id": 1,
       "name": "انصار میرزایی",
       "email": "",
-      "newsletter": false,
+      "newsletter": true,
       "userId": 1,
-      "birth": ""
+      "birth": "1376/3/2"
     }
   ],
-  "addresses": [
-    {
-      "name": "یوزر",
-      "city": "urmia",
-      "unit": "meysan",
-      "address": "sad asd asd ",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "name": "یوزر",
-      "city": "urmia",
-      "unit": "meysan",
-      "address": "sf asfdafasfa asf",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "name": "ohki",
-      "city": "tabriz",
-      "unit": "abbasi",
-      "address": "wadassdfs sf s df",
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "name": "خانه",
-      "city": "urmia",
-      "unit": "molavi",
-      "address": "asASdasdasdasd",
-      "userId": 1,
-      "id": 4
-    }
-  ],
+  "addresses": [],
   "providers": [
     {
       "id": 1,

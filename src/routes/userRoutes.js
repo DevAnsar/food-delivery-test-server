@@ -6,6 +6,7 @@ const {
   getAllUser,
   getAuthUserData,
   updateAuthUserData,
+  deleteAddress
 } = require("./../controllers/UserController");
 //Admin
 //get all user api
@@ -17,6 +18,9 @@ router.get("/address", getAuthUserAddresses);
 
 //create new address for authenticated user
 router.post("/address", createNewAddress);
+
+//destroy address
+router.delete("/address/:addressId", deleteAddress);
 
 //create auth user data
 router.get("/me", getAuthUserData);
