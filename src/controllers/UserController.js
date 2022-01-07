@@ -91,7 +91,7 @@ const updateAuthUserData = async (req, res) => {
     addressData.userId = user.id;
     // console.log(addressData);
     let { data } = await axios.patch(`/users/${user.id}`, addressData);
-    console.log("data",data)
+    console.log("data", data);
     res.json({
       status: true,
       user: data,
@@ -105,12 +105,12 @@ const updateAuthUserData = async (req, res) => {
   }
 };
 
-const deleteAddress = async (req,res)=>{
+const deleteAddress = async (req, res) => {
   try {
-    let {addressId} = req.params;
+    let { addressId } = req.params;
     // console.log(addressId);
     let { data } = await axios.delete(`/addresses/${addressId}`);
-    console.log("data",data)
+    console.log("data", data);
     res.json({
       status: true,
       message: "آدرس حذف شد",
@@ -121,7 +121,26 @@ const deleteAddress = async (req,res)=>{
       message: "متاسفانه سرور قادر به پاسخگویی به درخواست شما نیست",
     });
   }
-}
+};
+
+const editAddress = async (req,res) => {
+  try {
+    let addressData = req.body;
+    let { addressId } = req.params;
+    console.log(addressId);
+    let { data } = await axios.patch(`/addresses/${addressId}`,addressData);
+    console.log("data", data);
+    res.json({
+      status: true,
+      message: "آدرس حذف شد",
+    });
+  } catch (error) {
+    res.json({
+      status: false,
+      message: "متاسفانه سرور قادر به پاسخگویی به درخواست شما نیست",
+    });
+  }
+};
 
 module.exports = {
   getAllUser,
@@ -130,5 +149,6 @@ module.exports = {
   getSearch,
   getAuthUserData,
   updateAuthUserData,
-  deleteAddress
+  deleteAddress,
+  editAddress,
 };
